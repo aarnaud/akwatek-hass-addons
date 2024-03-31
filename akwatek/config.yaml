@@ -23,6 +23,7 @@ services:
   - mqtt:want
 options:
   tls_port: 8443
+  mqtt_data_root_topic: akwatek
 schema:
     tls_port: int?
     mqtt_discovery_data_topic: str?

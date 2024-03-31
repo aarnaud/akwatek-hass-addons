@@ -4,3 +4,6 @@ configuration:
     name: TLS Port
     description: >-
       Port to listen in TLS to receive calls from controller
+  mqtt_data_root_topic:
+    name: MQTT Data Root Topic
+    description: The root MQTT topic where the hydroqc generated values will be published
