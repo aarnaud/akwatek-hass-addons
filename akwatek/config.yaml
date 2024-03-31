@@ -1,6 +1,6 @@
 ---
 name: Akwatek Add-on
-version: v1
+version: latest
 slug: akwatek
 description: AKWA Technologies water leak detectors
 url: https://github.com/aarnaud/akwatek-hass-addons
