@@ -22,13 +22,13 @@ else
         # MQTT_SERVER="$MQTT_PREFIX$(bashio::services mqtt "host"):$(bashio::services mqtt "port")"
         export AMB_MQTT_BROKER_HOST=$(bashio::services mqtt "host")
         export AMB_MQTT_BROKER_PORT=$(bashio::services mqtt "port")
-        bashio::log.info "Configuring '$MQTT_HOST' mqtt server"
+        bashio::log.info "Configuring '$AMB_MQTT_BROKER_HOST' mqtt server"
     fi
     if ! bashio::config.exists 'mqtt_username'; then
         bashio::log.info "MQTT credentials not configured, trying to auto-discovering ..."
         export AMB_MQTT_USERNAME=$(bashio::services mqtt "username")
         export AMB_MQTT_PASSWORD=$(bashio::services mqtt "password")
-        bashio::log.info "Configuring '$MQTT_USERNAME' mqtt user"
+        bashio::log.info "Configuring '$AMB_MQTT_USERNAME' mqtt user"
     fi
 fi
 
