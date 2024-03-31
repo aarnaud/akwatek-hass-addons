@@ -51,5 +51,6 @@ jobs:
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
           docker buildx build --file akwatek/Dockerfile --label "runnumber=${GITHUB_RUN_ID}" --push \
+          --build-arg BUILD_FROM=ghcr.io/hassio-addons/base:15.0.7 \
           --tag $IMAGE_ID:$VERSION \
           --platform linux/amd64,linux/arm64,linux/armv7 akwatek
