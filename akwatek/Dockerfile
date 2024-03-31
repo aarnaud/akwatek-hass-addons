@@ -13,6 +13,7 @@ LABEL org.opencontainers.image.licenses="Apache License 2.0"
 
 ARG BUILD_ARCH
 COPY --from=build-image /app /app
+ENV GIN_MODE=release
 WORKDIR /app
 COPY . .
 RUN chmod +x entrypoint.sh
