@@ -7,3 +7,5 @@ configuration:
   mqtt_data_root_topic:
     name: MQTT Data Root Topic
     description: The root MQTT topic where the hydroqc generated values will be published
+  mqtt_discovery_data_topic:
+    name: MQTT Discovery Data Topic
