@@ -1,0 +1,6 @@
+---
+configuration:
+  tls_port:
+    name: TLS Port
+    description: >-
+      Port to listen in TLS to receive calls from controller

@@ -1,0 +1,32 @@
+---
+name: Akwatek Add-on
+version: v1
+slug: akwatek
+description: AKWA Technologies water leak detectors
+url: https://github.com/aarnaud/akwatek-hass-addons
+image: ghcr.io/aarnaud/akwatek-hass-addons
+startup: services
+ingress: true
+ingress_port: 8443
+ingress_stream: true
+init: false
+arch:
+  - aarch64
+  - amd64
+ports:
+  8443/tcp: 8443
+ports_description:
+  8443/tcp: HTTPS port to received controller call
+homeassistant_api: false
+services:
+  - mqtt:want
+options:
+  tls_port: 8443
+schema:
+    tls_port: int(0)?
+    mqtt_discovery_data_topic: str?
+    mqtt_data_root_topic: str?
+    mqtt_username: str?
+    mqtt_password: password?
+    mqtt_server: str?
+    mqtt_port: str?
