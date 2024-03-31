@@ -23,7 +23,7 @@ services:
 options:
   tls_port: 8443
 schema:
-    tls_port: int(0)?
+    tls_port: int?
     mqtt_discovery_data_topic: str?
     mqtt_data_root_topic: str?
     mqtt_username: str?
