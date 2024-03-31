@@ -15,5 +15,5 @@ ARG BUILD_ARCH
 COPY --from=build-image /app /app
 WORKDIR /app
 COPY . .
-
+RUN chmod +x entrypoint.sh
 CMD ["./entrypoint.sh"]
