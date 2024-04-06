@@ -1,14 +1,11 @@
 ---
 name: Akwatek
-version: 1.0.9
+version: 1.0.10
 slug: akwatek
 description: AKWA Technologies water leak detectors
 url: https://github.com/aarnaud/akwatek-hass-addons
 image: ghcr.io/aarnaud/akwatek-hass-addons
 startup: services
-ingress: true
-ingress_port: 0
-ingress_stream: true
 init: false
 arch:
   - aarch64
@@ -18,7 +15,7 @@ ports:
 ports_description:
   443/tcp: HTTPS port to received controller call
 homeassistant_api: false
-host_network: true
+host_network: false
 services:
   - mqtt:want
 options:
