@@ -22,6 +22,7 @@ options:
   tls_port: 443
   mqtt_data_root_topic: akwatek
   mqtt_discovery_data_topic: homeassistant
+  log_level: info
 schema:
     tls_port: int?
     mqtt_discovery_data_topic: str?
@@ -30,3 +31,4 @@ schema:
     mqtt_password: password?
     mqtt_server: str?
     mqtt_port: str?
+    log_level: str?

@@ -6,6 +6,8 @@ export AMB_MQTT_BROKER_HOST=$(bashio::config 'mqtt_server')
 export AMB_MQTT_BROKER_PORT=$(bashio::config 'mqtt_port')
 export AMB_HASS_DISCOVERY_TOPIC=$(bashio::config 'mqtt_discovery_data_topic')
 export AMB_MQTT_BASE_TOPIC=$(bashio::config 'mqtt_data_root_topic')
+export AMB_MQTT_BASE_TOPIC=$(bashio::config 'mqtt_data_root_topic')
+export AMB_LOG_LEVEL=$(bashio::config 'log_level')
 
 
 # Try Hassio MQTT Auto-Configuration
