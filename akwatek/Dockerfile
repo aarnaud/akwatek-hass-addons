@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM ghcr.io/aarnaud/akwatek-mqtt-bridge:1.0.10  AS build-image
+FROM ghcr.io/aarnaud/akwatek-mqtt-bridge:1.0.13  AS build-image
 
 
 # Start from a clean image, and import only required files
